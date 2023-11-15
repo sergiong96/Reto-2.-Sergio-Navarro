@@ -1,0 +1,205 @@
+#heroAboutUs {
+    margin: 0 4rem;
+}
+
+#heroAboutUs section {
+    margin-bottom: 5rem;
+}
+
+/*CONTENIDO SOBRE NOSOTROS:Info*/
+#info h2 {
+    text-align: center;
+}
+
+#heroAboutUs #infoContent {
+    display: flex;
+    align-items: center;
+}
+
+#heroAboutUs #infoContent #imageInfoContainer {
+    position: relative;
+    width: 40%;
+}
+
+#heroAboutUs #infoContent img {
+    width: 100%;
+}
+
+#heroAboutUs #infoContent #imageInfoContainer::before {
+    content: '';
+    position: absolute;
+    background-color: lightcoral;
+    width: 4rem;
+    height: 4rem;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+}
+
+#heroAboutUs #infoContent ul {
+    width: 50%;
+}
+
+/*SOBRE NOSOTROS:Equipo*/
+#heroAboutUs #team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heroAboutUs #team #teamImageContainer {
+    position: relative;
+    width: 90%;
+}
+
+#heroAboutUs #team #teamImageContainer::before {
+    content: '';
+    position: absolute;
+    background-color: lightcoral;
+    width: 6rem;
+    height: 6rem;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+}
+
+#heroAboutUs #team img {
+    width: 100%;
+}
+
+#heroAboutUs #team #teamContent {
+    display: flex;
+}
+
+#teamContent div {
+    margin: 0 2rem;
+}
+
+#teamContent div p {
+    text-align: center;
+}
+
+/*SOBRE NOSOTROS:Logros*/
+#heroAboutUs #achievement {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+
+#achievement h2 {
+    text-align: center;
+}
+
+#achievement>p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+#achievement #ach2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#achievement #ach2 div {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+#achievement #ach2 #iso9001 img {
+    height: 7rem;
+    filter: grayscale(80%);
+    margin-left: 6rem;
+
+}
+
+#achievement #ach2 #iso14001 img {
+    height: 8rem;
+    filter: grayscale(80%);
+    margin-right: 6rem;
+}
+
+#achievement #ach2 #iso9001 img:hover,
+#achievement #ach2 #iso14001 img:hover {
+    filter: grayscale(0%);
+}
+
+/*SOBRE NOSOTROS:Filosofía*/
+#philosophy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 4rem;
+}
+
+#philosophy>article {
+    display: flex;
+    justify-content: space-between;
+}
+
+#philosophy .philosophy-element {
+    position: relative;
+    width: 22%;
+    text-align: center;
+    background-color: lightblue;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-shadow: 4px 5px 8px 1px black;
+}
+
+#philosophy .philosophy-element::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: 0.3rem;
+    width: 3rem;
+    background-color: lightcoral;
+}
+
+#philosophy .philosophy-element::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -5px;
+    height: 2.5rem;
+    width: 0.3rem;
+    background-color: lightcoral;
+}
+
+#philosophy .philosophy-element:hover {
+    transform: scale(1.1);
+}
+
+/*SOBRE NOSOTROS:Ubicación*/
+#location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#location #imageLocationContainer {
+    position: relative;
+}
+
+#location img {
+    width: 100%;
+}
+
+#location #imageLocationContainer::before {
+    content: '';
+    position: absolute;
+    background-color: lightcoral;
+    width: 6rem;
+    height: 6rem;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+}
+
+#location #locationContent {
+    display: flex;
+    align-items: center;
+}

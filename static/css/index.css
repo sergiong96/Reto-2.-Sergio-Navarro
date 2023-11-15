@@ -1,0 +1,119 @@
+#heroIndex h1 {
+    text-align: center;
+}
+
+#heroIndex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#heroIndex section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+    width: 10rem;
+    height: 16rem;
+    padding: 0.5rem;
+    margin: 1rem 4rem;
+    border: 1px solid gainsboro;
+    border-radius: 0.5rem;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 1px 2px lightgray;
+}
+
+.product a {
+    text-decoration: none;
+    color: black;
+}
+
+.product img {
+    height: 7rem;
+    width: 7rem;
+    margin-top: 0.5rem;
+}
+
+.product p {
+    margin: 0.2rem 0;
+}
+
+.product input[type="text"] {
+    width: 1rem;
+    text-align: center;
+    margin: 0 0.4rem;
+}
+
+.amount-div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.4rem;
+}
+
+.amount-div button[type="button"] {
+    cursor: pointer;
+    display: flex;
+    border-radius: 1rem;
+}
+
+.amount-div button[type="button"] span {
+    font-size: 1rem;
+}
+
+.product .price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0.4rem 0;
+}
+
+.product .price p:nth-child(1) {
+    color: lightcoral;
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.product .price p:nth-child(2) {
+    font-size: small;
+}
+
+.product button[data-button-type="toBasket"] {
+    position: relative;
+    background-color: black;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.product button[data-button-type="toBasket"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: lightcoral;
+    border-radius: 0.4rem;
+    transition: width 800ms ease-in-out, height 800ms ease-in-out;
+}
+
+.product button[data-button-type="toBasket"]:hover::before {
+    width: 100%;
+    height: 100%;
+    transition: width 800ms ease-in-out, height 800ms ease-in-out;
+}
+
+.product button[data-button-type="toBasket"] a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 9999;
+}

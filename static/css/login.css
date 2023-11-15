@@ -1,0 +1,135 @@
+#heroLogin {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+#heroLogin h3 {
+    margin-bottom: 2rem;
+}
+
+#heroLogin #logInForm,
+#heroLogin #signInForm,
+#heroLogin #recoverForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#heroLogin #login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+}
+
+#heroLogin #login #showRecover {
+    margin: 0 0 1rem;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+#heroLogin #login #logInForm input:not(input[type="submit"]),
+#heroLogin #signInForm input:not(input[type="submit"]) {
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#heroLogin #login #logInForm button[type="submit"],
+#heroLogin #signInForm button[type="submit"],
+#heroLogin #recoverPass button[type="submit"] {
+    position: relative;
+    padding: 0.7rem;
+    cursor: pointer;
+    background-color: lightblue;
+    border: gray;
+    border-radius: 0.4rem;
+}
+
+#heroLogin #login #logInForm button[type="submit"] a,
+#heroLogin #signInForm button[type="submit"] a,
+#heroLogin #recoverPass button[type="submit"] a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    z-index: 999;
+
+}
+
+#heroLogin #login #logInForm button[type="submit"]:hover::before,
+#heroLogin #signInForm button[type="submit"]:hover::before,
+#heroLogin #recoverPass button[type="submit"]:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: lightcoral;
+    z-index: 800;
+    animation: upAndDown 1s ease-in-out forwards;
+}
+
+@keyframes upAndDown {
+    0% {
+        height: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    40% {
+        height: 100%;
+    }
+
+    70% {
+        height: 0;
+        top: 0;
+        left: 0;
+
+    }
+
+    100% {
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+#heroLogin .form_group {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#heroLogin .form_group .label_login {
+    cursor: text;
+    position: absolute;
+    color: gray;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform 800ms, color 300ms;
+}
+
+#heroLogin .form_group .label_login.focused {
+    cursor: default;
+    color: lightcoral;
+    transform: translateY(-20px) scale(0.8);
+    transform-origin: left top;
+}
+
+#heroLogin #recoverPass {
+    display: none;
+    margin-top: 6rem;
+    width: 20rem;
+}
+
+#heroLogin #recoverPass input:not(input[type="submit"]) {
+    margin-bottom: 1rem;
+}
+
+#heroLogin #recoverPass.active {
+    display: block;
+}

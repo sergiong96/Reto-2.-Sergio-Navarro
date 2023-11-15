@@ -1,0 +1,105 @@
+footer #newsletter {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+footer #newsletter input {
+    margin-right: 1rem;
+}
+
+footer #social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+footer #social i {
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: black;
+}
+
+footer #social i:hover {
+    box-shadow: 2px 2px 4px 1px black;
+    border-radius: 0.3rem;
+}
+
+footer #info {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer #info ul {
+    list-style-type: none;
+}
+
+footer #info li {
+    margin: 1rem 0;
+}
+
+footer #info a {
+    text-decoration: none;
+    color: black;
+}
+
+footer #info a:hover {
+    color: white;
+}
+
+footer #info h2 {
+    border: 1px solid white;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+footer #info h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+footer #info h2:hover {
+    animation: zoomRotate 1s ease-in-out;
+}
+
+@keyframes zoomRotate {
+    0% {
+        transform: scale(1) rotate(0);
+    }
+
+    40% {
+        transform: scale(1.1) rotate(0);
+    }
+
+    80% {
+        transform: scale(1.1) rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0) scale(1);
+    }
+}
+
+footer #copy {
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    background-color: black;
+    color: white;
+    height: 3rem;
+    width: 100%;
+}
+
+footer #copy p {
+    font-size: smaller;
+    margin: auto 1rem auto 0;
+}

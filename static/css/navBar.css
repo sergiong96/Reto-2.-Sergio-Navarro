@@ -1,0 +1,109 @@
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: gainsboro;
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+
+#navBar #navigationLinks {
+    display: flex;
+    list-style-type: none;
+}
+
+#navBar #navigationLinks li {
+    margin: 0 2rem;
+    position: relative;
+}
+
+#navBar #navigationLinks li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: black;
+    width: 0;
+    height: 1px;
+    transition: width 600ms ease-in-out;
+}
+
+#navBar #navigationLinks li:hover::after {
+    width: 100%;
+    transition: width 600ms ease-in-out;
+}
+
+#navBar #navigationLinks li:hover a {
+    color: cornflowerblue;
+}
+
+#navBar #navigationLinks li a {
+    color: black;
+    text-decoration: none;
+}
+
+#loginIcon i,
+#basketIcon i {
+    color: black;
+}
+
+#loginIcon:hover i,
+#basketIcon:hover i {
+    color: cornflowerblue;
+}
+
+#navBar #basketIcon {
+    position: relative;
+}
+
+#navBar #basketIcon #floatingAmount {
+    position: absolute;
+    width: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: none;
+    top: -9px;
+    left: 14px;
+    z-index: -1;
+    background-color: lightcoral;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+#navBar #basketIcon #shoppingList {
+    display: none;
+}
+
+#navBar #basketIcon:hover #shoppingList.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0;
+    padding: 1rem;
+    top: 2rem;
+    left: -3rem;
+    width: 6rem;
+    height: auto;
+    background-color: lightblue;
+    list-style-type: none;
+}
+
+
+#navBar #basketIcon #shoppingList li {
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+#navBar #basketIcon #shoppingList li input {
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.8rem;
+    background-color: inherit;
+    border: 1px solid gainsboro;
+    position: absolute;
+    top: 0;
+    margin-left: 0.8rem;
+}

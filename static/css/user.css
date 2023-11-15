@@ -1,0 +1,55 @@
+#heroUser {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    text-align: center;
+    margin: 0 5rem;
+}
+
+#heroUser h1 {
+    grid-row: 1;
+    grid-column: 1/4;
+}
+
+#heroUser section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10rem;
+    border: 1px solid darkgray;
+    background-color: gainsboro;
+}
+
+#heroUser section div:hover p,
+#heroUser section div:hover a {
+    color: cornflowerblue;
+}
+
+#heroUser #exit {
+    grid-row: 4;
+    grid-column: 1/4;
+    margin-top: 2rem;
+}
+
+#heroUser #exit button {
+    width: 15rem;
+    height: 3rem;
+    background-color: lightcoral;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#heroUser div i {
+    font-size: 2rem;
+}
+
+#heroUser section div a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
